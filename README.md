@@ -1,0 +1,2 @@
+# go-crazy
+crazy application
