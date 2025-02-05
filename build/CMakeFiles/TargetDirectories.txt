@@ -1,6 +1,0 @@
-/Users/arielkriheli/Projects/go-crazy/build/CMakeFiles/edit_cache.dir
-/Users/arielkriheli/Projects/go-crazy/build/CMakeFiles/rebuild_cache.dir
-/Users/arielkriheli/Projects/go-crazy/build/src/CMakeFiles/src.dir
-/Users/arielkriheli/Projects/go-crazy/build/src/CMakeFiles/App.dir
-/Users/arielkriheli/Projects/go-crazy/build/src/CMakeFiles/edit_cache.dir
-/Users/arielkriheli/Projects/go-crazy/build/src/CMakeFiles/rebuild_cache.dir
