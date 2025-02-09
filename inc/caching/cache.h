@@ -16,6 +16,9 @@ public:
    * in function body(m_cache_data[1] = 0) */
   const std::vector<CacheType> get_cache_data() const { return m_cache_data; }
 
+  void hit();
+  void miss();
+
 private:
   int m_cache_level;
   int m_cache_limit; /* mem limit? */
@@ -24,20 +27,18 @@ private:
       m_cache_data; /** buffer to hold the memory/copy of the data. */
 };
 
-/**
- * @brief 2. **Cache Line or Cache Block:**
+/*
+**Cache Line or Cache Block:**
    - Data is stored in fixed-sized blocks called "cache lines" or "cache
- blocks."
+blocks."
    - Each block typically contains multiple bytes (e.g., 4 bytes, 8 bytes).
    - This allows the CPU to retrieve data in larger chunks efficiently,
  improving memory access speed.
-
- * cache hit, cache miss
  */
 
 /*
-       1.	Cache Size: How much data will your cache store? Is it fixed or
-dynamic? 2.	Replacement Policy: What happens when the cache is full? Common
+       1. Cache Size: How much data will your cache store? Is it fixed or
+dynamic? 2. Replacement Policy: What happens when the cache is full? Common
 policies include: •	LRU (Least Recently Used): Evict the least recently
 accessed item. •	LFU (Least Frequently Used): Evict the least accessed
 item over time. •	FIFO (First In, First Out): Evict the oldest item. 3.

@@ -1,1 +1,1 @@
-1. Configure imguu to the Application.
+1. Configure imGui to the Application.
