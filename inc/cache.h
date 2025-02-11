@@ -3,9 +3,10 @@
 
 /**
  * @brief l3 slowest in disk is a shared cache, l1 smallest and fastest on the
- * cpu, l2 larger closer to main memory ram.
+ * cpu, l2 larger closer to main memory ram
  */
 
+#include <list>
 #include <vector>
 
 template <typename CacheType> class cache {
@@ -20,6 +21,7 @@ public:
   void miss();
 
 private:
+  std::list<CacheType> m_data;
   int m_cache_level;
   int m_cache_limit; /* mem limit? */
   size_t m_cache_size;
